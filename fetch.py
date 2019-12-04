@@ -21,7 +21,7 @@ def fetch_birthdays(text_data):
 		# This list element is a list of lists and will store all birthdays as individual lists
 		birthday_list=[]
 		# Looping through each birthday
-		for i in range(1,len(text)):
+		for i in range(1, len(text)):
 			# Fetching each birthday as a element of list
 			lines=text[i].split('\r\n')
 			# Fetching DTSTART element of calendar file
