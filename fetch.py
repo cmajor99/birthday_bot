@@ -23,9 +23,9 @@ def fetch_birthdays(text_data):
 		# Looping through each birthday
 		for i in range(1, len(text)):
 			# Fetching each birthday as a element of list
-			lines=text[i].split('\r\n')
+			lines = text[i].split('\r\n')
 			# Fetching DTSTART element of calendar file
-			dtstart=(lines[1].split(':'))[1]
+			dtstart = (lines[1].split(':'))[1]
 			# Splitting DTSTART into YYYY MM DD components
 			bday_year = dtstart[0:4]
 			bday_month = dtstart[4:6]
