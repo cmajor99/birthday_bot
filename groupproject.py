@@ -1,6 +1,6 @@
-import mysql.connector
+import MySQLdb
 
-mydb = mysql.connector.connect(
+mydb = MySQLdb.connect(
   host="localhost",
   user="yourusername",
   passwd="yourpassword",
