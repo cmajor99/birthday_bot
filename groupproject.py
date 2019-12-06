@@ -22,7 +22,7 @@ val = [
     ("Cory", "6133629506","cory.major@student.sl.on.ca","https://www.facebook.com/CoryMajor72"),
     ("Ryan","ENTERNUMBERHERE","ryan.steele@student.sl.on.ca","https://www.facebook.com/profile.php?id=100009757061339"),
     ("Joel", "ENTERNUMBERHERE","joel.leger@student.sl.on.ca","https://www.facebook.com/TechyJ"),
-    ("Robert", "ENTERNUMBERHERE","robert.wheesk@student.sl.on.ca","https://www.facebook.com/profile.php?id=100009973901865")
+    ("Robert", "ENTERNUMBERHERE","iothore.wheesk@student.sl.on.ca","https://www.facebook.com/profile.php?id=100009973901865")
 ]
 mycursor.executemany(sql, val)
 
@@ -31,3 +31,4 @@ mydb.commit()
 print(mycursor.rowcount, "was inserted.")
 
 
+sql_select_Query = "select of "
