@@ -1,0 +1,16 @@
+CREATE TABLE Friends(
+friend_ID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+friends_Name VARCHAR(255) NOT NULL,
+friends_Number INT NOT NULL,
+friends_Email VARCHAR(255) NOT NULL,
+friends_Facebook VARCHAR(255) NOT NULL);
+INSERT INTO 
+	Friends(friends_Name, friends_Number, friends_Email, friends_Facebook)
+VALUES
+	("Joseph", "6138705888","joseph.guindon@student.sl.on.ca","https://www.facebook.com/joey.guindon.9"),
+	("Cory", "6133629506","cory.major@student.sl.on.ca","https://www.facebook.com/CoryMajor72"),
+	("Ryan","ENTERNUMBERHERE","ryan.steele@student.sl.on.ca","https://www.facebook.com/profile.php?id=100009757061339"),
+    ("Joel", "ENTERNUMBERHERE","joel.leger@student.sl.on.ca","https://www.facebook.com/TechyJ"),
+    ("Robert", "ENTERNUMBERHERE","robert.wheesk@student.sl.on.ca","https://www.facebook.com/profile.php?id=100009973901865")
+
+    
