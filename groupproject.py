@@ -1,6 +1,6 @@
-import mysql.connector
+import MySQLdb
 
-mydb = mysql.connector.connect(
+mydb = MySQLdb.connect(
   host="localhost",
   user="yourusername",
   passwd="yourpassword",
@@ -16,9 +16,7 @@ mycursor.execute("ALTER TABLE friends ADD COLUMN friendsNumber INT")
 mycursor.execute("ALTER TABLE friends ADD COLUMN friendsEmail VARCHAR(255)")
 mycursor.execute("ALTER TABLE friends ADD COLUMN friendsFacebook VARCHAR(255)")
 
-
-
-sql = "INSERT INTO friends (friendsName,friendsNumber,friendsFacebook ) VALUES (%s, %s, %s)"
+sql = "INSERT INTO friends (friendsName,friendsNumber,friendsFacebook ) VALUES (%s, %s, %s, %s)"
 val = [
     ("Joseph", "6138705888","joseph.guindon@student.sl.on.ca","https://www.facebook.com/joey.guindon.9"),
     ("Cory", "6133629506","cory.major@student.sl.on.ca","https://www.facebook.com/CoryMajor72"),
