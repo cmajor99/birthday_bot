@@ -1,4 +1,4 @@
-import MySQLdb
+import mysql.connector
 import requests,urllib
 
 import smtplib
@@ -67,4 +67,3 @@ def fetch_birthdays(text_data):
 		return birthday_list
 	finally:
 		pass
-
