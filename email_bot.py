@@ -1,8 +1,12 @@
 import smtplib
+import Scraper_File_Name
 
-choice = input('What is your email address?\n')
+# Used for testing
+# choice = input('What is your email address?\n')
 
-content = 'You have X friends who have birthdays today. They are InsertNameVariableHere'
+email = Scraped_Email_Variable_Here
+
+content = 'Happy birthday %s! I hope you  have a great day filled with lots of fun and laughter.'
 
 mail = smtplib.SMTP('smtp.gmail.com', 587)
 
@@ -12,6 +16,6 @@ mail.starttls()
 
 mail.login('pythongroupproject19@gmail.com', 'Python1234')
 
-mail.sendmail('pythongroupproject@gmail.com', choice, content)
+mail.sendmail('pythongroupproject@gmail.com', email, content)
 
 mail.close()
