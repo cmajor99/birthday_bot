@@ -4,7 +4,7 @@ def dailyexec():
     print('Checking for birthdays...')
     return
 
-schedule.every().day.at("14:39").do(dailyexec)
+schedule.every().day.at("09:00").do(dailyexec)
 
 # if dailyexec gets a value
 # store in variable
